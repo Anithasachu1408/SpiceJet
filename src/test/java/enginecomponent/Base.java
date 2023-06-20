@@ -27,12 +27,12 @@ public class Base extends WebUtil{
 		PageOpen(readProperty("url"));
 		
 	}
-	//@AfterMethod
+	@AfterMethod
 	public void afterTest() {
 		BrowserClose();	
 	}
   
-	//@AfterSuite
+	@AfterSuite
 	public void afterSuite() {
 		stopReport();
 	}
